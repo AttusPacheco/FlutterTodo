@@ -1,8 +1,9 @@
 class Todo {
-  String title;
-  String date;
-  String description;
-  int priority;
+  late String title;
+  late String? date;
+  late String description;
 
-  Todo({required this.title, required this.date, required this.description, required this.priority});
+  Todo.init();
+
+  Todo({required this.title, required this.description, this.date});
 }
